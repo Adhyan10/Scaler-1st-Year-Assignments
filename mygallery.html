@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responisve Gallery</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #header {
+            background-color: rgb(210, 192, 109); 
+            height: 100px;
+            display: flex;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images {
+            margin: 20px auto;
+            height: 500px;
+            width: 1000px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* gap: 60px; */
+            flex-wrap: wrap;
+
+        }
+
+
+        @media (max-width:950px) {
+            .images {
+                height: 100px;
+                width: 90px;
+                margin: 10px auto;
+            }
+
+            .body {
+                background-size: cover;
+                height: 100vh;
+                width: 100vh;
+            }
+
+
+
+        }
+
+        .end {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        
+body{
+    background-image: url(https://png.pngtree.com/background/20250103/original/pngtree-d-rendering-of-stunning-wall-decorations-for-art-gallery-or-studio-picture-image_13357810.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+        /* body {
+            background-color: magenta;
+        } */
+
+        img {
+            border: 4px solid black;
+            border-radius: 20%;
+            margin: 20px;
+            height: 250px;
+            width: 250px;
+            transition-property: height, width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+        }
+
+        img:hover {
+            height: 300px;
+            width: 275px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Welcome to my Gallery</h1>
+    </header>
+
+    <main>
+
+
+
+        <div class="images">
+            <div class="galleryimages">
+                <img src="https://i.pinimg.com/736x/19/f0/70/19f070deb9fe00aa43f754013d13d01b.jpg" alt="image 1 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://thumbs.dreamstime.com/b/funny-face-baby-27701492.jpg" alt="image 2 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://preview.redd.it/after-the-reveal-of-macos-ventura-today-it-is-safe-to-say-v0-8osedvzyra491.jpg?width=640&crop=smart&auto=webp&s=3ed26d6af21a755d449b80090cb69470e94e31a7"
+                    alt="image 3 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYb9TMDbJ3p1M0oy0hCSauV3zOgPCVkc3gkSCxO6kAto3KZUIcvLTvmUaUCjxNEd8iqb8&usqp=CAU"
+                    alt="image 4">
+            </div>
+            <div class="galleryimages">
+                <img src="https://images.squarespace-cdn.com/content/v1/535b1632e4b0ab57db46e48b/1607375050172-15ZSQFV3F3WXO4N9MS6C/sunset2.jpg?format=1000w"
+                    alt="image 5 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://images.unsplash.com/photo-1531558506007-fe311a2f4729?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2t5c2NyYXBlcnxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="image 6 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://media.istockphoto.com/id/1413313627/photo/skyscrapers-density-in-the-city-of-london.jpg?s=612x612&w=0&k=20&c=6YRFQUExCTsdEbFhUgMt2k0qwehXnyznaZntrM6BvXc="
+                    alt="image 7 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/30_St_Mary_Axe_EC3_%2812631347393%29.jpg/250px-30_St_Mary_Axe_EC3_%2812631347393%29.jpg"
+                    alt="image 8 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://cdn.britannica.com/69/84969-050-D0E5FB34/buildings-Petronas-Twin-Towers-world-Kuala-Lumpur.jpg"
+                    alt="image 9 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://cdn.britannica.com/84/94684-050-2652816E/Chrysler-Building-New-York-City.jpg"
+                    alt="image 10 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://www.constructconnect.com/hubfs/Blog%20Images%20and%20Media/skyscrapers.jpg"
+                    alt="image 11 ">
+            </div>
+            <div class="galleryimages">
+                <img src="https://cdn.britannica.com/73/114973-050-2DC46083/Midtown-Manhattan-Empire-State-Building-New-York.jpg?w=400&h=300&c=crop"
+                    alt="image 12 ">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="end">Created by Adhyan Chettri © 2025</p>
+    </footer>
+
+
+</body>
+
+</html>
